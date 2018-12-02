@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/suspring/SpringcloudConfig/
+          search-paths: respo
+          default-label: master
+          username: suspring
+          password: scl880216
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761:/eureka/
+
